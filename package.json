@@ -4,7 +4,8 @@
   "description": "A node project to teach how to use express with mongo",
   "main": "app.js",
   "scripts": {
-    "test": "nodemon src/app.js"
+    "test": "nodemon src/app.js",
+    "start": "node src/app.js"
   },
   "author": "Marco",
   "license": "ISC",
