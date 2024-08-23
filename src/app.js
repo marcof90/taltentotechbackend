@@ -1,6 +1,10 @@
 const express = require("express");
 const mongoose = require("mongoose");
+const cors = require("cors");
 const app = express();
+
+app.use(cors());
+
 //Importar rutas
 const productRoutes = require("./routes/product.routes");
 const salesRoutes = require("./routes/sale.routes");
