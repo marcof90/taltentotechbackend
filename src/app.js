@@ -8,6 +8,7 @@ app.use(cors());
 //Importar rutas
 const productRoutes = require("./routes/product.routes");
 const salesRoutes = require("./routes/sale.routes");
+const contactRoutes = require("./routes/contact.routes");
 require("dotenv").config();
 
 //Conectarnos a mongoose
@@ -25,6 +26,7 @@ app.get("/", function (req, res) {
 });
 app.use("/products", productRoutes);
 app.use("/sales", salesRoutes);
+app.use("/contacts", contactRoutes);
 
 app.listen(3000, () => {
   console.log("Server Running");
